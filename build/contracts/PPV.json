@@ -20,7 +20,7 @@
       "outputs": [
         {
           "internalType": "uint256",
-          "name": "rentCount",
+          "name": "",
           "type": "uint256"
         }
       ],
@@ -59,21 +59,21 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_vidId\",\"type\":\"uint256\"}],\"name\":\"rentVideo\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"videos\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"rentCount\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"videosCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/PersonalProjects/DogeTube/contracts/PPV.sol\":\"PPV\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/PersonalProjects/DogeTube/contracts/PPV.sol\":{\"keccak256\":\"0x8372369b73e8f03411850ac74d016556f6db595ead30fef0dcde63e6f34c99dc\",\"urls\":[\"bzz-raw://bdc9490874b7840eb39eb3850812dcf626f34617c4e042b9b912c915e368ab66\",\"dweb:/ipfs/QmSJhzMQbZGcfHDpCxtbYup9bZ9rX7nF9gcMpaFBH1rTgr\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50610155806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c8063462ccdad14610046578063e6821bf514610074578063ef08523b146100b6575b600080fd5b6100726004803603602081101561005c57600080fd5b81019080803590602001909291905050506100d4565b005b6100a06004803603602081101561008a57600080fd5b81019080803590602001909291905050506100fc565b6040518082815260200191505060405180910390f35b6100be61011a565b6040518082815260200191505060405180910390f35b6000808281526020019081526020016000206000016000815480929190600101919050555050565b60006020528060005260406000206000915090508060000154905081565b6001548156fea265627a7a7231582074d7ba46442074578815987075baf5f715d35027240b76e0e0a05a8c3770d5b964736f6c63430005100032",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c8063462ccdad14610046578063e6821bf514610074578063ef08523b146100b6575b600080fd5b6100726004803603602081101561005c57600080fd5b81019080803590602001909291905050506100d4565b005b6100a06004803603602081101561008a57600080fd5b81019080803590602001909291905050506100fc565b6040518082815260200191505060405180910390f35b6100be61011a565b6040518082815260200191505060405180910390f35b6000808281526020019081526020016000206000016000815480929190600101919050555050565b60006020528060005260406000206000915090508060000154905081565b6001548156fea265627a7a7231582074d7ba46442074578815987075baf5f715d35027240b76e0e0a05a8c3770d5b964736f6c63430005100032",
-  "sourceMap": "28:280:0:-;;;181:30;8:9:-1;5:2;;;30:1;27;20:12;5:2;181:30:0;28:280;;;;;;",
-  "deployedSourceMap": "28:280:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:280:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;219:86;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;219:86:0;;;;;;;;;;;;;;;;;:::i;:::-;;104:36;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;104:36:0;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;149:23;;;:::i;:::-;;;;;;;;;;;;;;;;;;;219:86;270:6;:14;277:6;270:14;;;;;;;;;;;:24;;;:27;;;;;;;;;;;;;219:86;:::o;104:36::-;;;;;;;;;;;;;;;;;;;;;;:::o;149:23::-;;;;:::o",
-  "source": "pragma solidity ^0.5.16;\r\n\r\ncontract PPV {\r\n\r\n    struct Video {\r\n        uint rentCount;\r\n    }\r\n\r\n    mapping(uint => Video) public videos;\r\n\r\n    uint public videosCount;\r\n\r\n    constructor () public {\r\n    }\r\n\r\n    function rentVideo (uint _vidId) public {\r\n        videos[_vidId].rentCount ++;\r\n    }\r\n}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_vidId\",\"type\":\"uint256\"}],\"name\":\"rentVideo\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"videos\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"videosCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/PersonalProjects/DogeTube/contracts/PPV.sol\":\"PPV\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/PersonalProjects/DogeTube/contracts/PPV.sol\":{\"keccak256\":\"0xfcbe653afd32e62a6a53d7dffead3f219ba85400d2e49e6deedfdbd35e000092\",\"urls\":[\"bzz-raw://2ab11b05f45590795a1bd0a1fc5f244d8984981d9acd036242bcea24c64408e8\",\"dweb:/ipfs/Qmf7js5HbFPf9anTytU3zvxDPKDEmZRA7qnn8AutFf9p2A\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061014c806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c8063462ccdad14610046578063e6821bf514610074578063ef08523b146100b6575b600080fd5b6100726004803603602081101561005c57600080fd5b81019080803590602001909291905050506100d4565b005b6100a06004803603602081101561008a57600080fd5b81019080803590602001909291905050506100f9565b6040518082815260200191505060405180910390f35b6100be610111565b6040518082815260200191505060405180910390f35b6000808281526020019081526020016000206000815480929190600101919050555050565b60006020528060005260406000206000915090505481565b6001548156fea265627a7a723158206057b8b887d60abe9b3c23b5caa733017fb53750d20b80764cc7baa8b82ca8cb64736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c8063462ccdad14610046578063e6821bf514610074578063ef08523b146100b6575b600080fd5b6100726004803603602081101561005c57600080fd5b81019080803590602001909291905050506100d4565b005b6100a06004803603602081101561008a57600080fd5b81019080803590602001909291905050506100f9565b6040518082815260200191505060405180910390f35b6100be610111565b6040518082815260200191505060405180910390f35b6000808281526020019081526020016000206000815480929190600101919050555050565b60006020528060005260406000206000915090505481565b6001548156fea265627a7a723158206057b8b887d60abe9b3c23b5caa733017fb53750d20b80764cc7baa8b82ca8cb64736f6c63430005100032",
+  "sourceMap": "28:215:0:-;;;126:30;8:9:-1;5:2;;;30:1;27;20:12;5:2;126:30:0;28:215;;;;;;",
+  "deployedSourceMap": "28:215:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:215:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;164:76;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;164:76:0;;;;;;;;;;;;;;;;;:::i;:::-;;50:35;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;50:35:0;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;94:23;;;:::i;:::-;;;;;;;;;;;;;;;;;;;164:76;215:6;:14;222:6;215:14;;;;;;;;;;;;:17;;;;;;;;;;;;;164:76;:::o;50:35::-;;;;;;;;;;;;;;;;;:::o;94:23::-;;;;:::o",
+  "source": "pragma solidity ^0.5.16;\r\n\r\ncontract PPV {\r\n\r\n    mapping(uint => uint) public videos;\r\n\r\n    uint public videosCount;\r\n\r\n    constructor () public {\r\n    }\r\n\r\n    function rentVideo (uint _vidId) public {\r\n        videos[_vidId] ++;\r\n    }\r\n}",
   "sourcePath": "D:/PersonalProjects/DogeTube/contracts/PPV.sol",
   "ast": {
     "absolutePath": "/D/PersonalProjects/DogeTube/contracts/PPV.sol",
     "exportedSymbols": {
       "PPV": [
-        27
+        23
       ]
     },
-    "id": 28,
+    "id": 24,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -93,91 +93,52 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 27,
+        "id": 23,
         "linearizedBaseContracts": [
-          27
+          23
         ],
         "name": "PPV",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "canonicalName": "PPV.Video",
-            "id": 4,
-            "members": [
-              {
-                "constant": false,
-                "id": 3,
-                "name": "rentCount",
-                "nodeType": "VariableDeclaration",
-                "scope": 4,
-                "src": "74:14:0",
-                "stateVariable": false,
-                "storageLocation": "default",
-                "typeDescriptions": {
-                  "typeIdentifier": "t_uint256",
-                  "typeString": "uint256"
-                },
-                "typeName": {
-                  "id": 2,
-                  "name": "uint",
-                  "nodeType": "ElementaryTypeName",
-                  "src": "74:4:0",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  }
-                },
-                "value": null,
-                "visibility": "internal"
-              }
-            ],
-            "name": "Video",
-            "nodeType": "StructDefinition",
-            "scope": 27,
-            "src": "50:46:0",
-            "visibility": "public"
-          },
-          {
             "constant": false,
-            "id": 8,
+            "id": 5,
             "name": "videos",
             "nodeType": "VariableDeclaration",
-            "scope": 27,
-            "src": "104:36:0",
+            "scope": 23,
+            "src": "50:35:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Video_$4_storage_$",
-              "typeString": "mapping(uint256 => struct PPV.Video)"
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
+              "typeString": "mapping(uint256 => uint256)"
             },
             "typeName": {
-              "id": 7,
+              "id": 4,
               "keyType": {
-                "id": 5,
+                "id": 2,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
-                "src": "112:4:0",
+                "src": "58:4:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 }
               },
               "nodeType": "Mapping",
-              "src": "104:22:0",
+              "src": "50:21:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Video_$4_storage_$",
-                "typeString": "mapping(uint256 => struct PPV.Video)"
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
+                "typeString": "mapping(uint256 => uint256)"
               },
               "valueType": {
-                "contractScope": null,
-                "id": 6,
-                "name": "Video",
-                "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 4,
-                "src": "120:5:0",
+                "id": 3,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "66:4:0",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Video_$4_storage_ptr",
-                  "typeString": "struct PPV.Video"
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
                 }
               }
             },
@@ -186,11 +147,11 @@
           },
           {
             "constant": false,
-            "id": 10,
+            "id": 7,
             "name": "videosCount",
             "nodeType": "VariableDeclaration",
-            "scope": 27,
-            "src": "149:23:0",
+            "scope": 23,
+            "src": "94:23:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -198,10 +159,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 9,
+              "id": 6,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "149:4:0",
+              "src": "94:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -212,46 +173,46 @@
           },
           {
             "body": {
-              "id": 13,
+              "id": 10,
               "nodeType": "Block",
-              "src": "203:8:0",
+              "src": "148:8:0",
               "statements": []
             },
             "documentation": null,
-            "id": 14,
+            "id": 11,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 11,
+              "id": 8,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "193:2:0"
+              "src": "138:2:0"
             },
             "returnParameters": {
-              "id": 12,
+              "id": 9,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "203:0:0"
+              "src": "148:0:0"
             },
-            "scope": 27,
-            "src": "181:30:0",
+            "scope": 23,
+            "src": "126:30:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 25,
+              "id": 21,
               "nodeType": "Block",
-              "src": "259:46:0",
+              "src": "204:36:0",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 23,
+                    "id": 19,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -259,58 +220,42 @@
                     "nodeType": "UnaryOperation",
                     "operator": "++",
                     "prefix": false,
-                    "src": "270:27:0",
+                    "src": "215:17:0",
                     "subExpression": {
                       "argumentTypes": null,
-                      "expression": {
+                      "baseExpression": {
                         "argumentTypes": null,
-                        "baseExpression": {
-                          "argumentTypes": null,
-                          "id": 19,
-                          "name": "videos",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 8,
-                          "src": "270:6:0",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Video_$4_storage_$",
-                            "typeString": "mapping(uint256 => struct PPV.Video storage ref)"
-                          }
-                        },
-                        "id": 21,
-                        "indexExpression": {
-                          "argumentTypes": null,
-                          "id": 20,
-                          "name": "_vidId",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 16,
-                          "src": "277:6:0",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
-                        },
-                        "isConstant": false,
-                        "isLValue": true,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "nodeType": "IndexAccess",
-                        "src": "270:14:0",
+                        "id": 16,
+                        "name": "videos",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5,
+                        "src": "215:6:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Video_$4_storage",
-                          "typeString": "struct PPV.Video storage ref"
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
+                          "typeString": "mapping(uint256 => uint256)"
                         }
                       },
-                      "id": 22,
+                      "id": 18,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 17,
+                        "name": "_vidId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 13,
+                        "src": "222:6:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
-                      "memberName": "rentCount",
-                      "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3,
-                      "src": "270:24:0",
+                      "nodeType": "IndexAccess",
+                      "src": "215:14:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -321,30 +266,30 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 24,
+                  "id": 20,
                   "nodeType": "ExpressionStatement",
-                  "src": "270:27:0"
+                  "src": "215:17:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 26,
+            "id": 22,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "rentVideo",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 17,
+              "id": 14,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 16,
+                  "id": 13,
                   "name": "_vidId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26,
-                  "src": "239:11:0",
+                  "scope": 22,
+                  "src": "184:11:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -352,10 +297,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 15,
+                    "id": 12,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "239:4:0",
+                    "src": "184:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -365,33 +310,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "238:13:0"
+              "src": "183:13:0"
             },
             "returnParameters": {
-              "id": 18,
+              "id": 15,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "259:0:0"
+              "src": "204:0:0"
             },
-            "scope": 27,
-            "src": "219:86:0",
+            "scope": 23,
+            "src": "164:76:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 28,
-        "src": "28:280:0"
+        "scope": 24,
+        "src": "28:215:0"
       }
     ],
-    "src": "0:308:0"
+    "src": "0:243:0"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "/D/PersonalProjects/DogeTube/contracts/PPV.sol",
       "exportedSymbols": {
         "PPV": [
-          27
+          23
         ]
       }
     },
@@ -421,30 +366,27 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            27
+            23
           ],
           "name": "PPV",
-          "scope": 28
+          "scope": 24
         },
         "children": [
           {
             "attributes": {
-              "canonicalName": "PPV.Video",
-              "name": "Video",
-              "scope": 27,
+              "constant": false,
+              "name": "videos",
+              "scope": 23,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(uint256 => uint256)",
+              "value": null,
               "visibility": "public"
             },
             "children": [
               {
                 "attributes": {
-                  "constant": false,
-                  "name": "rentCount",
-                  "scope": 4,
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "type": "uint256",
-                  "value": null,
-                  "visibility": "internal"
+                  "type": "mapping(uint256 => uint256)"
                 },
                 "children": [
                   {
@@ -454,70 +396,32 @@
                     },
                     "id": 2,
                     "name": "ElementaryTypeName",
-                    "src": "74:4:0"
-                  }
-                ],
-                "id": 3,
-                "name": "VariableDeclaration",
-                "src": "74:14:0"
-              }
-            ],
-            "id": 4,
-            "name": "StructDefinition",
-            "src": "50:46:0"
-          },
-          {
-            "attributes": {
-              "constant": false,
-              "name": "videos",
-              "scope": 27,
-              "stateVariable": true,
-              "storageLocation": "default",
-              "type": "mapping(uint256 => struct PPV.Video)",
-              "value": null,
-              "visibility": "public"
-            },
-            "children": [
-              {
-                "attributes": {
-                  "type": "mapping(uint256 => struct PPV.Video)"
-                },
-                "children": [
+                    "src": "58:4:0"
+                  },
                   {
                     "attributes": {
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 5,
+                    "id": 3,
                     "name": "ElementaryTypeName",
-                    "src": "112:4:0"
-                  },
-                  {
-                    "attributes": {
-                      "contractScope": null,
-                      "name": "Video",
-                      "referencedDeclaration": 4,
-                      "type": "struct PPV.Video"
-                    },
-                    "id": 6,
-                    "name": "UserDefinedTypeName",
-                    "src": "120:5:0"
+                    "src": "66:4:0"
                   }
                 ],
-                "id": 7,
+                "id": 4,
                 "name": "Mapping",
-                "src": "104:22:0"
+                "src": "50:21:0"
               }
             ],
-            "id": 8,
+            "id": 5,
             "name": "VariableDeclaration",
-            "src": "104:36:0"
+            "src": "50:35:0"
           },
           {
             "attributes": {
               "constant": false,
               "name": "videosCount",
-              "scope": 27,
+              "scope": 23,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -530,14 +434,14 @@
                   "name": "uint",
                   "type": "uint256"
                 },
-                "id": 9,
+                "id": 6,
                 "name": "ElementaryTypeName",
-                "src": "149:4:0"
+                "src": "94:4:0"
               }
             ],
-            "id": 10,
+            "id": 7,
             "name": "VariableDeclaration",
-            "src": "149:23:0"
+            "src": "94:23:0"
           },
           {
             "attributes": {
@@ -549,7 +453,7 @@
                 null
               ],
               "name": "",
-              "scope": 27,
+              "scope": 23,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -562,9 +466,9 @@
                   ]
                 },
                 "children": [],
-                "id": 11,
+                "id": 8,
                 "name": "ParameterList",
-                "src": "193:2:0"
+                "src": "138:2:0"
               },
               {
                 "attributes": {
@@ -573,9 +477,9 @@
                   ]
                 },
                 "children": [],
-                "id": 12,
+                "id": 9,
                 "name": "ParameterList",
-                "src": "203:0:0"
+                "src": "148:0:0"
               },
               {
                 "attributes": {
@@ -584,14 +488,14 @@
                   ]
                 },
                 "children": [],
-                "id": 13,
+                "id": 10,
                 "name": "Block",
-                "src": "203:8:0"
+                "src": "148:8:0"
               }
             ],
-            "id": 14,
+            "id": 11,
             "name": "FunctionDefinition",
-            "src": "181:30:0"
+            "src": "126:30:0"
           },
           {
             "attributes": {
@@ -603,7 +507,7 @@
                 null
               ],
               "name": "rentVideo",
-              "scope": 27,
+              "scope": 23,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -615,7 +519,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_vidId",
-                      "scope": 26,
+                      "scope": 22,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -628,19 +532,19 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 15,
+                        "id": 12,
                         "name": "ElementaryTypeName",
-                        "src": "239:4:0"
+                        "src": "184:4:0"
                       }
                     ],
-                    "id": 16,
+                    "id": 13,
                     "name": "VariableDeclaration",
-                    "src": "239:11:0"
+                    "src": "184:11:0"
                   }
                 ],
-                "id": 17,
+                "id": 14,
                 "name": "ParameterList",
-                "src": "238:13:0"
+                "src": "183:13:0"
               },
               {
                 "attributes": {
@@ -649,9 +553,9 @@
                   ]
                 },
                 "children": [],
-                "id": 18,
+                "id": 15,
                 "name": "ParameterList",
-                "src": "259:0:0"
+                "src": "204:0:0"
               },
               {
                 "children": [
@@ -676,88 +580,71 @@
                               "isLValue": true,
                               "isPure": false,
                               "lValueRequested": true,
-                              "member_name": "rentCount",
-                              "referencedDeclaration": 3,
                               "type": "uint256"
                             },
                             "children": [
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "isConstant": false,
-                                  "isLValue": true,
-                                  "isPure": false,
-                                  "lValueRequested": false,
-                                  "type": "struct PPV.Video storage ref"
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 5,
+                                  "type": "mapping(uint256 => uint256)",
+                                  "value": "videos"
                                 },
-                                "children": [
-                                  {
-                                    "attributes": {
-                                      "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
-                                      "referencedDeclaration": 8,
-                                      "type": "mapping(uint256 => struct PPV.Video storage ref)",
-                                      "value": "videos"
-                                    },
-                                    "id": 19,
-                                    "name": "Identifier",
-                                    "src": "270:6:0"
-                                  },
-                                  {
-                                    "attributes": {
-                                      "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
-                                      "referencedDeclaration": 16,
-                                      "type": "uint256",
-                                      "value": "_vidId"
-                                    },
-                                    "id": 20,
-                                    "name": "Identifier",
-                                    "src": "277:6:0"
-                                  }
-                                ],
-                                "id": 21,
-                                "name": "IndexAccess",
-                                "src": "270:14:0"
+                                "id": 16,
+                                "name": "Identifier",
+                                "src": "215:6:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 13,
+                                  "type": "uint256",
+                                  "value": "_vidId"
+                                },
+                                "id": 17,
+                                "name": "Identifier",
+                                "src": "222:6:0"
                               }
                             ],
-                            "id": 22,
-                            "name": "MemberAccess",
-                            "src": "270:24:0"
+                            "id": 18,
+                            "name": "IndexAccess",
+                            "src": "215:14:0"
                           }
                         ],
-                        "id": 23,
+                        "id": 19,
                         "name": "UnaryOperation",
-                        "src": "270:27:0"
+                        "src": "215:17:0"
                       }
                     ],
-                    "id": 24,
+                    "id": 20,
                     "name": "ExpressionStatement",
-                    "src": "270:27:0"
+                    "src": "215:17:0"
                   }
                 ],
-                "id": 25,
+                "id": 21,
                 "name": "Block",
-                "src": "259:46:0"
+                "src": "204:36:0"
               }
             ],
-            "id": 26,
+            "id": 22,
             "name": "FunctionDefinition",
-            "src": "219:86:0"
+            "src": "164:76:0"
           }
         ],
-        "id": 27,
+        "id": 23,
         "name": "ContractDefinition",
-        "src": "28:280:0"
+        "src": "28:215:0"
       }
     ],
-    "id": 28,
+    "id": 24,
     "name": "SourceUnit",
-    "src": "0:308:0"
+    "src": "0:243:0"
   },
   "compiler": {
     "name": "solc",
@@ -767,12 +654,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x5aF6413DB050e89C924519E6b61BFC994FA01870",
-      "transactionHash": "0x2bb085213e496264af9bfb5f2e2623e05e48b60c418fa2dab386886795197316"
+      "address": "0xd0dC6Db4A90cb5Be9530A6a276640eBf55728229",
+      "transactionHash": "0x072fb83b1c4eac86efb8676d543bd2d6a504131fb5fbd46bc1a011c1feff220e"
     }
   },
   "schemaVersion": "3.4.0",
-  "updatedAt": "2021-04-30T16:34:02.788Z",
+  "updatedAt": "2021-05-01T05:44:05.715Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

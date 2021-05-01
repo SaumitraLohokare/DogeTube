@@ -2,11 +2,7 @@ pragma solidity ^0.5.16;
 
 contract PPV {
 
-    struct Video {
-        uint rentCount;
-    }
-
-    mapping(uint => Video) public videos;
+    mapping(uint => uint) public videos;
 
     uint public videosCount;
 
@@ -14,6 +10,6 @@ contract PPV {
     }
 
     function rentVideo (uint _vidId) public {
-        videos[_vidId].rentCount ++;
+        videos[_vidId] ++;
     }
 }
