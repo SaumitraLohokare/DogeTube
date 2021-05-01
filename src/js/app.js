@@ -4,18 +4,21 @@ App = {
 
   init: async function() {
     // Load pets.
+      $.getJSON('../pets.json', function(data) {
       var petsRow = $('#petsRow');
       var petTemplate = $('#petTemplate');
 
-      for (i = 0; i < 10; i ++) {
-        petTemplate.find('.panel-title').text('Movie ' + i);
-        petTemplate.find('.pet-breed').text('Genre');
-        petTemplate.find('.pet-age').text('Rented: ');
-        petTemplate.find('.pet-location').text('Director...');
-        petTemplate.find('.btn-adopt').attr('data-id', i);
+      for (i = 0; i < 5; i ++) {
+        petTemplate.find('.panel-title').text(data[i].name);
+        petTemplate.find('img').attr('src', data[i].picture);
+        petTemplate.find('.pet-breed').text(data[i].breed);
+        petTemplate.find('.pet-age').text(data[i].age);
+        petTemplate.find('.pet-location').text(data[i].location);
+        petTemplate.find('.btn-adopt').attr('data-id', data[i].id);
 
         petsRow.append(petTemplate.html());
       }
+    });
 
     return await App.initWeb3();
   },

@@ -1,48 +1,48 @@
 [
   {
     "id": 0,
-    "name": "Frieda",
-    "picture": "images/scottish-terrier.jpeg",
+    "name": "Shazam",
+    "picture": "https://image.tmdb.org/t/p/w500/xnopI5Xtky18MPhK40cZAGAOVeV.jpg",
     "age": 3,
     "breed": "Scottish Terrier",
     "location": "Lisco, Alabama"
   },
   {
     "id": 1,
-    "name": "Gina",
-    "picture": "images/scottish-terrier.jpeg",
+    "name": "The Highwaymen",
+    "picture": "https://image.tmdb.org/t/p/w500/4bRYg4l12yDuJvAfqvUOPnBrxno.jpg",
     "age": 3,
     "breed": "Scottish Terrier",
     "location": "Tooleville, West Virginia"
   },
   {
     "id": 2,
-    "name": "Collins",
-    "picture": "images/french-bulldog.jpeg",
+    "name": "Destroyer",
+    "picture": "https://image.tmdb.org/t/p/w500/sHw9gTdo43nJL82py0oaROkXXNr.jpg",
     "age": 2,
     "breed": "French Bulldog",
     "location": "Freeburn, Idaho"
   },
   {
     "id": 3,
-    "name": "Melissa",
-    "picture": "images/boxer.jpeg",
+    "name": "Aquaman",
+    "picture": "https://image.tmdb.org/t/p/w500/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg",
     "age": 2,
     "breed": "Boxer",
     "location": "Camas, Pennsylvania"
   },
   {
     "id": 4,
-    "name": "Jeanine",
-    "picture": "images/french-bulldog.jpeg",
+    "name": "Bohemian Rhapsody",
+    "picture": "https://image.tmdb.org/t/p/w500/lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg",
     "age": 2,
     "breed": "French Bulldog",
     "location": "Gerber, South Dakota"
   },
   {
     "id": 5,
-    "name": "Elvia",
-    "picture": "images/french-bulldog.jpeg",
+    "name": "A Dog's Way Home",
+    "picture": "https://image.tmdb.org/t/p/w500/pZn87R7gtmMCGGO8KeaAfZDhXLg.jpg",
     "age": 3,
     "breed": "French Bulldog",
     "location": "Innsbrook, Illinois"
