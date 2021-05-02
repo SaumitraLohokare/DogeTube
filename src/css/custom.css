@@ -1,0 +1,41 @@
+.btn-adopt {
+	margin-right: 10px;
+}
+
+.mylist-heading {
+	position: relative;
+	top: 15px;
+	margin-bottom: 30px;
+}
+
+.blurr {
+	transition: 0.5s;
+}
+
+.blurr:hover {
+	filter: grayscale(100%);
+}
+
+.arrow {
+  color: #ffffff;
+  background-color: #d62828;
+  margin: 1em 0;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+}
+.arrow::after {
+  display: inline-block;
+  padding-left: 8px;
+  content: "➞";
+  transition: transform 0.3s ease-out;
+}
+.arrow:hover {
+  /*color: #0c5449;
+  background-color: #f6f3ed;*/
+  cursor: pointer;
+}
+.arrow:hover::after {
+  transform: translateX(4px);
+}

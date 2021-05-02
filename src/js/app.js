@@ -4,18 +4,95 @@ App = {
 
   init: async function() {
     // Load pets.
+      $.getJSON('../pets.json', function(data) {
       var petsRow = $('#petsRow');
+      var petsRow1 = $('#petsRow1');
+      var petsRow2 = $('#petsRow2');
+      var petsRow3 = $('#petsRow3');
+      var petsRow4 = $('#petsRow4');
+      var petsRow5 = $('#petsRow5');
+      var petsRow6 = $('#petsRow6');
       var petTemplate = $('#petTemplate');
+      var sportsTemplate = $('#sportsTemplate');
 
-      for (i = 0; i < 10; i ++) {
-        petTemplate.find('.panel-title').text('Movie ' + i);
-        petTemplate.find('.pet-breed').text('Genre');
-        petTemplate.find('.pet-age').text('Rented: ');
-        petTemplate.find('.pet-location').text('Director...');
-        petTemplate.find('.btn-adopt').attr('data-id', i);
+      for (i = 0; i < 3; i++) {
+        petTemplate.find('.panel-title').text(data[i].name);
+        petTemplate.find('img').attr('src', data[i].picture);
+        petTemplate.find('.pet-breed').text(data[i].breed);
+        petTemplate.find('.pet-age').text(data[i].age);
+        petTemplate.find('.pet-location').text(data[i].location);
+        petTemplate.find('.btn-adopt').attr('data-id', data[i].id);
 
         petsRow.append(petTemplate.html());
       }
+
+      for (i = 3; i < 7; i++) {
+        petTemplate.find('.panel-title').text(data[i].name);
+        petTemplate.find('img').attr('src', data[i].picture);
+        petTemplate.find('.pet-breed').text(data[i].breed);
+        petTemplate.find('.pet-age').text(data[i].age);
+        petTemplate.find('.pet-location').text(data[i].location);
+        petTemplate.find('.btn-adopt').attr('data-id', data[i].id);
+
+        petsRow1.append(petTemplate.html());
+      }
+
+      for (i = 7; i < 12; i++) {
+        petTemplate.find('.panel-title').text(data[i].name);
+        petTemplate.find('img').attr('src', data[i].picture);
+        petTemplate.find('.pet-breed').text(data[i].breed);
+        petTemplate.find('.pet-age').text(data[i].age);
+        petTemplate.find('.pet-location').text(data[i].location);
+        petTemplate.find('.btn-adopt').attr('data-id', data[i].id);
+
+        petsRow2.append(petTemplate.html());
+      }      
+      
+      for (i = 12; i < 17; i++) {
+        petTemplate.find('.panel-title').text(data[i].name);
+        petTemplate.find('img').attr('src', data[i].picture);
+        petTemplate.find('.pet-breed').text(data[i].breed);
+        petTemplate.find('.pet-age').text(data[i].age);
+        petTemplate.find('.pet-location').text(data[i].location);
+        petTemplate.find('.btn-adopt').attr('data-id', data[i].id);
+
+        petsRow3.append(petTemplate.html());
+      } 
+
+      for (i = 17; i < 22; i++) {
+        petTemplate.find('.panel-title').text(data[i].name);
+        petTemplate.find('img').attr('src', data[i].picture);
+        petTemplate.find('.pet-breed').text(data[i].breed);
+        petTemplate.find('.pet-age').text(data[i].age);
+        petTemplate.find('.pet-location').text(data[i].location);
+        petTemplate.find('.btn-adopt').attr('data-id', data[i].id);
+
+        petsRow4.append(petTemplate.html());
+      }
+
+      for (i = 22; i < 27; i++) {
+        petTemplate.find('.panel-title').text(data[i].name);
+        petTemplate.find('img').attr('src', data[i].picture);
+        petTemplate.find('.pet-breed').text(data[i].breed);
+        petTemplate.find('.pet-age').text(data[i].age);
+        petTemplate.find('.pet-location').text(data[i].location);
+        petTemplate.find('.btn-adopt').attr('data-id', data[i].id);
+
+        petsRow5.append(petTemplate.html());
+      } 
+
+      for (i = 27; i < 30; i++) {
+        sportsTemplate.find('.panel-title').text(data[i].name);
+        sportsTemplate.find('img').attr('src', data[i].picture);
+        sportsTemplate.find('.pet-breed').text(data[i].breed);
+        sportsTemplate.find('.pet-age').text(data[i].age);
+        sportsTemplate.find('.pet-location').text(data[i].location);
+        sportsTemplate.find('.btn-adopt').attr('data-id', data[i].id);
+
+        petsRow6.append(sportsTemplate.html());
+      }
+
+    });
 
     return await App.initWeb3();
   },
